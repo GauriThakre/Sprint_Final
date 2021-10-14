@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="37.349">
+    <testcase classname="employee list" name="Add Functionality" time="3.727">
+        <system-out><![CDATA[Given I had already logged in OrangeHrm and navigates to employee list tab..passed
+When i click on add button..................................................passed
+Then I should be directed to another page...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Employee list" name="Delete Functionality" time="6.137">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=94.0.4606.71)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LIN51015087', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\GATHAKRE\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4a87ecac437dfbf85d6c62c536131ee5&#10;*** Element info: {Using=id, value=ohrmList_chkSelectAll}" type="org.openqa.selenium.WebDriverException"><![CDATA[Given I am already logged into OrangeHrm and navigates to employee list tab.passed
+When i select the the employee name from employee list......................failed
+And click the delete button.................................................skipped
+Then the employee information must be delete................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=94.0.4606.71)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LIN51015087', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\GATHAKRE\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a87ecac437dfbf85d6c62c536131ee5
+*** Element info: {Using=id, value=ohrmList_chkSelectAll}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Locators.Locators1.selectbtn(Locators1.java:73)
+	at Pages.Deletepage.selectall(Deletepage.java:6)
+	at Stepdefination.DeleteEmployee.i_select_the_the_employee_name_from_employee_list(DeleteEmployee.java:29)
+	at ✽.i select the the employee name from employee list(file:///C:/Users/GATHAKRE/eclipse-workspace/Testing_maven/src/main/resources/orangehrm/Delete.feature:4)
+]]></failure>
+    </testcase>
+    <testcase classname="Employee list" name="Resest Functionality" time="12.395">
+        <system-out><![CDATA[Given I have already logged in OrangeHrm and navigates to employee list tab.passed
+When the employee information  details is entered...........................passed
+And click the reset.........................................................passed
+Then the employee details will be reset.....................................passed
+When The employee information is not entered................................passed
+And click the reset.........................................................passed
+Then no change will occur...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Employee list" name="Search functionality" time="14.959">
+        <system-out><![CDATA[Given i am already logged into OrangeHrm and navigates to employee list tab.passed
+When I enter the  valid employee information in employee name , employee id ,and other details.passed
+Then search must be successful..............................................passed
+When I enter the invalid employee information in employee name, employee id and other details.passed
+Then no records will found..................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

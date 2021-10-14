@@ -1,0 +1,311 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-14T09:31:45.076Z",
+        "line": 2,
+        "name": "Add Functionality",
+        "description": "",
+        "id": "employee-list;add-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3673212400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I had already logged in OrangeHrm and navigates to employee list tab",
+            "match": {
+              "location": "Stepdefination.AddEmployee.i_had_already_logged_in_orange_hrm_and_navigates_to_employee_list_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11968500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i click on add button",
+            "match": {
+              "location": "Stepdefination.AddEmployee.i_click_on_add_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should be directed to another page",
+            "match": {
+              "location": "Stepdefination.AddEmployee.i_should_be_directed_to_another_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "employee list",
+    "description": "",
+    "id": "employee-list",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/orangehrm/Add.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-14T09:31:48.817Z",
+        "line": 2,
+        "name": "Delete Functionality",
+        "description": "",
+        "id": "employee-list;delete-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008840900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am already logged into OrangeHrm and navigates to employee list tab",
+            "match": {
+              "location": "Stepdefination.DeleteEmployee.i_am_already_logged_into_orange_hrm_and_navigates_to_employee_list_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d94.0.4606.71)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51015087\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\\Users\\GATHAKRE\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a87ecac437dfbf85d6c62c536131ee5\n*** Element info: {Using\u003did, value\u003dohrmList_chkSelectAll}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Locators.Locators1.selectbtn(Locators1.java:73)\r\n\tat Pages.Deletepage.selectall(Deletepage.java:6)\r\n\tat Stepdefination.DeleteEmployee.i_select_the_the_employee_name_from_employee_list(DeleteEmployee.java:29)\r\n\tat ✽.i select the the employee name from employee list(file:///C:/Users/GATHAKRE/eclipse-workspace/Testing_maven/src/main/resources/orangehrm/Delete.feature:4)\r\n",
+              "duration": 4123532100,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "i select the the employee name from employee list",
+            "match": {
+              "location": "Stepdefination.DeleteEmployee.i_select_the_the_employee_name_from_employee_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click the delete button",
+            "match": {
+              "location": "Stepdefination.DeleteEmployee.click_the_delete_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the employee information must be delete",
+            "match": {
+              "location": "Stepdefination.DeleteEmployee.the_employee_information_must_be_delete()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Employee list",
+    "description": "",
+    "id": "employee-list",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/orangehrm/Delete.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-14T09:31:54.959Z",
+        "line": 2,
+        "name": "Resest Functionality",
+        "description": "",
+        "id": "employee-list;resest-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9538570400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have already logged in OrangeHrm and navigates to employee list tab",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.i_have_already_logged_in_orange_hrm_and_navigates_to_employee_list_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1008013500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the employee information  details is entered",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.the_employee_information_details_is_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 975161100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click the reset",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.click_the_reset()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the employee details will be reset.",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.the_employee_details_will_be_reset()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The employee information is not entered",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.the_employee_information_is_not_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 872865900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click the reset",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.click_the_reset()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "no change will occur",
+            "match": {
+              "location": "Stepdefination.ResetEmployee.no_change_will_occur()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Employee list",
+    "description": "",
+    "id": "employee-list",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/orangehrm/Reset.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-14T09:32:07.358Z",
+        "line": 2,
+        "name": "Search functionality",
+        "description": "",
+        "id": "employee-list;search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11994131300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "i am already logged into OrangeHrm and navigates to employee list tab",
+            "match": {
+              "location": "Stepdefination.SearchEmployee.i_am_already_logged_into_orange_hrm_and_navigates_to_employee_list_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1517900800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter the  valid employee information in employee name , employee id ,and other details",
+            "match": {
+              "location": "Stepdefination.SearchEmployee.i_enter_the_valid_employee_information_in_employee_name_employee_id_and_other_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "search must be successful.",
+            "match": {
+              "location": "Stepdefination.SearchEmployee.search_must_be_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1446906100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the invalid employee information in employee name, employee id and other details",
+            "match": {
+              "location": "Stepdefination.SearchEmployee.i_enter_the_invalid_employee_information_in_employee_name_employee_id_and_other_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "no records will found",
+            "match": {
+              "location": "Stepdefination.SearchEmployee.no_records_will_found()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Employee list",
+    "description": "",
+    "id": "employee-list",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/orangehrm/Search.feature",
+    "tags": []
+  }
+]
